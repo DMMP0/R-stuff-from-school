@@ -10,17 +10,17 @@
 set.seed(203818)
 
 #a
-fila = c(rep("VACANZA",15),rep("LAVORO",25))
-prove = 100000
-num = 0; den = 0
+fila <- c(rep("VACANZA", 15), rep("LAVORO", 25))
+prove <- 100000
+num <- 0; den <- 0
 for (i in 1:prove) 
 {
-	out = sample(fila,2,FALSE)
+	out <- sample(fila, 2, FALSE)
 	if (out[1]=="LAVORO") 
 	{
-		den = den + 1
+		den <- den + 1
 		if (out[2]=="VACANZA") 
-			num = num+1
+			num <- num+1
 	}
 }
 cat(num,den,num/den,"\n")
@@ -28,15 +28,15 @@ cat(num,den,num/den,"\n")
 
 
 #b
-num = 0; den = 0
+num <- 0; den <- 0
 for (i in 1:prove) 
 {
-	out = sample(fila,2,FALSE)
+	out <- sample(fila, 2, FALSE)
 	if (out[1]=="VACANZA") 
 	{
-		den = den + 1
+		den <- den + 1
 		if (out[2]=="VACANZA") 
-			num = num+1
+			num <- num+1
 	}
 }
 cat(num,den,num/den,"\n")
@@ -45,13 +45,13 @@ cat(num,den,num/den,"\n")
 
 
 #c
-num = 0; den = 0
+num <- 0; den <- 0
 for (i in 1:prove) 
 {
-	out = sample(fila,2,FALSE)
-	den = den + 1
+	out <- sample(fila, 2, FALSE)
+	den <- den + 1
 	if (out[2]=="VACANZA") 
-		num = num+1
+		num <- num+1
 	
 }
 cat(num,den,num/den,"\n")

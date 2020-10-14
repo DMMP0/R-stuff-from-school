@@ -1,6 +1,6 @@
 set.seed(203818)
 
-money = c("TESTA","CROCE")
+money <- c("TESTA", "CROCE")
 
 sample(money, 1)
 #"CROCE"

@@ -1,15 +1,15 @@
 set.seed(203818)
 
-dado = c(1:6)
+dado <- 1:6
 
 sample(dado, 1)
 #6
 sample(dado, 2,TRUE)
 #4 5
-x= sample(dado, 20, TRUE)
+x <- sample(dado, 20, TRUE)
 x
 #2 2 3 4 3 4 2 6 5 4 4 1 1 5 6 4 2 2 5 4
-y= matrix(x,ncol=2)
+y <- matrix(x, ncol=2)
 y
 #     [,1] [,2]
 # [1,]    2    4
@@ -23,7 +23,7 @@ y
 # [9,]    5    5
 #[10,]    4    4
 
-z= apply(y,1,sum)
+z <- apply(y, 1, sum)
 
 table(z)
 #z

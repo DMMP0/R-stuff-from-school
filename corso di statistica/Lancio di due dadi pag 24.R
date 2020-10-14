@@ -1,6 +1,6 @@
-x = sample(dado,size=200000,replace=TRUE)
-y =matrix(x,ncol=2)
-z = apply(y,1,sum)
+x <- sample(dado, size=200000, replace=TRUE)
+y <- matrix(x, ncol=2)
+z <- apply(y, 1, sum)
 table(z)
 #z
 #    2     3     4     5     6     7     8     9    10    11    12 

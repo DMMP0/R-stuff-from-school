@@ -1,6 +1,6 @@
 # Title     : TODO
 # Objective : TODO
-# Created by: Maur
+# Created by: DMMP0
 # Created on: 25/09/2020
 
 #Esercizio 1 Risolvere le seguenti espressioni:
