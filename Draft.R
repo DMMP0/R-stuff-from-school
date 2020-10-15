@@ -3,11 +3,13 @@
 # Created by: DMMP0
 # Created on: 09/10/2020
 
-#rm(list = setdiff(ls(), lsf.str()))
-set.seed(99)
+source("Fractals.R")
 
-z1 <- rnorm(150,100,50)
-z2 <- rnorm(220,82,65)
-boxplot(z1,z2,names=c("Z1","Z2"))
+rm(list = setdiff(ls(), lsf.str()))
+A <- c(0,0)
+B <- c(300,0)
+C <- c(150,300)
 
+Serp(A,B,C)
 
+rm(list = setdiff(ls(), lsf.str()))
